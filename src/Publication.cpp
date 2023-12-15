@@ -3,7 +3,7 @@
 #include <cstring>
 #include <iomanip>
 #include <string>
-#include "Publication.h"
+#include "../include/Publication.h"
 
 namespace myproject
 {

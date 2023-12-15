@@ -1,10 +1,10 @@
 #include <fstream>
 #include <cstring>
-#include "LibApp.h"
-#include "Menu.h"
-#include "Book.h"
-#include "PublicationSelector.h"
-#include "Date.h"
+#include "../include/LibApp.h"
+#include "../include/Menu.h"
+#include "../include/Book.h"
+#include "../include/PublicationSelector.h"
+#include "../include/Date.h"
 
 namespace myproject
 {

@@ -77,7 +77,7 @@ To compile and run the Library Management System, follow these steps:
 1. Ensure you have a C++ compiler installed, such as GCC or Clang.
 2. Compile the source files. For example, using GCC:
    ```
-   g++ -Wall -std=c++11 -o LibApp LibAppMain.cpp Book.cpp Date.cpp LibApp.cpp Menu.cpp Publication.cpp PublicationSelector.cpp Streamable.cpp
+   g++ -Wall -std=c++11 -o LibApp src/*.cpp
    ```
 3. Run the compiled application:
    ```

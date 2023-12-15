@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
-#include "PublicationSelector.h"
+#include "../include/PublicationSelector.h"
 using namespace std;
 namespace myproject
 {

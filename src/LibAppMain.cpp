@@ -1,8 +1,8 @@
 #include <fstream>
 #include <iostream>
-#include "LibApp.h"
-#include "Date.h"
-#include "Menu.h"
+#include "../include/LibApp.h"
+#include "../include/Date.h"
+#include "../include/Menu.h"
 using namespace myproject;
 void runApp(const char *filename)
 {
@@ -13,7 +13,7 @@ void runApp(const char *filename)
    while (filename[i])
       original[4u + i] = filename[i++];
    original[4u + i] = char(0);
-   // copiying original values to data file;
+   // copying original values to data file;
    std::ofstream outFile(filename);
    std::ifstream inFile(original);
    while (inFile.get(ch))
@@ -38,17 +38,17 @@ void runApp(const char *filename)
 int main()
 {
    Menu outFile("Select Data File");
-   outFile << "LibRecsSmall.txt"
-           << "LibRecs.txt";
+   outFile << "../data/LibRecsSmall.txt"
+           << "../data/LibRecs.txt";
    switch (outFile.run())
    {
    case 1:
       std::cout << "Test started using small data: " << std::endl;
-      runApp("LibRecsSmall.txt");
+      runApp("../data/LibRecsSmall.txt");
       break;
    case 2:
       std::cout << "Test started using big data: " << std::endl;
-      runApp("LibRecs.txt");
+      runApp("../data/LibRecs.txt");
       break;
    default:
       std::cout << "Aborted by user! " << std::endl;
