@@ -25,50 +25,54 @@ Contributors to this project will gain valuable experience in several areas:
 
 ## Files and Modules
 
-Each `.cpp` file in the project is associated with a corresponding header file. Additionally, `LibAppMain.cpp` utilizes example text files to simulate the library database.
+The project directory structure is organized as follows:
 
-### `Book.cpp`
+- `src` directory: Contains all the `.cpp` files.
+- `include` directory: Contains all the `.h` files.
+- `data` directory: Contains example text files used to simulate the library database.
 
-- **Header File:** `Book.h`
+### `src/Book.cpp`
+
+- **Header File:** `include/Book.h`
 - Implements the `Book` class, which manages book-related data such as titles, authors, and ISBN. This module is essential for the library's inventory management, allowing efficient tracking and categorization of books.
 
-### `Date.cpp`
+### `src/Date.cpp`
 
-- **Header File:** `Date.h`
+- **Header File:** `include/Date.h`
 - Contains the `Date` class for handling dates within the application. This class is utilized for date-related operations like due dates for book returns, issue dates, and other time-sensitive features in the library system.
 
-### `LibApp.cpp`
+### `src/LibApp.cpp`
 
-- **Header File:** `LibApp.h`
+- **Header File:** `include/LibApp.h`
 - Forms the core of the library application. This module integrates various components of the system, orchestrating functionalities like book management, user interactions, and overall application flow.
 
-### `LibAppMain.cpp`
+### `src/LibAppMain.cpp`
 
 - Serves as the entry point of the application. This file contains the `main` function, which initializes and launches the library application. It's the starting block for running the system.
 
-### `Menu.cpp`
+### `src/Menu.cpp`
 
-- **Header File:** `Menu.h`
+- **Header File:** `include/Menu.h`
 - Implements user interface elements, particularly the menu options. This module is crucial for user interaction, enabling library patrons and staff to navigate through different functionalities of the system.
 
-### `Publication.cpp`
+### `src/Publication.cpp`
 
-- **Header File:** `Publication.h`
+- **Header File:** `include/Publication.h`
 - Includes the `Publication` class, potentially serving as a base or a specialized class for different types of publications available in the library, such as books, journals, magazines, etc.
 
-### `PublicationSelector.cpp`
+### `src/PublicationSelector.cpp`
 
-- **Header File:** `PublicationSelector.h`
+- **Header File:** `include/PublicationSelector.h`
 - Provides utilities or components for selecting publications. This module likely aids in searching, filtering, or listing various publications in the library, enhancing user experience and accessibility.
 
-### `Streamable.cpp`
+### `src/Streamable.cpp`
 
-- **Header File:** `Streamable.h`
+- **Header File:** `include/Streamable.h`
 - Possibly contains an implementation of a `Streamable` class or interface. This module might be used for streaming data or defining a common interface for different types of streamable media or data within the library system.
 
-### `Lib.h`
+### `include/Lib.h`
 
-- The `Lib.h` module in the myproject namespace defines several constants that are used throughout the project. The use case for these constants can be found as comments inside the header file.
+- The `Lib.h` module in the `include` directory defines several constants that are used throughout the project. The use case for these constants can be found as comments inside the header file.
 
 ## Usage (Compilation and Running)
 
